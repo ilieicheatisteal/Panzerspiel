@@ -2228,7 +2228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitmarker: {fileID: 162595318}
-  explosion: {fileID: 0}
+  explosion: {fileID: 162595320}
 --- !u!114 &162595317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18895,6 +18895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitmarker2: {fileID: 1478236305}
+  explosion2: {fileID: 1478236306}
 --- !u!212 &1478236302
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19184,6 +19185,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74c731ca0da6d5d4e957d023b36af1af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cannonPointTwo: {fileID: 1975816970}
+  cannonPrefab: {fileID: 5901942598626259073, guid: 22bcb5a54dc052a438fecebaeb7f1093, type: 3}
+  cannonForce: 12
+  firerate: 5
 --- !u!1 &1481371352
 GameObject:
   m_ObjectHideFlags: 0
