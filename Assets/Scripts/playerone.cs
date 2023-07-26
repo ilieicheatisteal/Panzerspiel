@@ -18,7 +18,7 @@ public class playerone : MonoBehaviour
             hitmarker.Play();
         }
 
-                if(collision2.gameObject.tag == "ball") {
+        if(collision2.gameObject.tag == "ball") {
             explosion.Play();
         }
     }
