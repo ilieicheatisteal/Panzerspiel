@@ -5,6 +5,7 @@ using UnityEngine;
 public class playerone : MonoBehaviour
 {
     public AudioSource hitmarker;
+    public AudioSource explosion;
     float speed = 3.0f;
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,10 @@ public class playerone : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision2){
         if(collision2.gameObject.tag == "bullet") {
             hitmarker.Play();
+        }
+
+        if(collision2.gameObject.tag == "ball") {
+            explosion.Play();
         }
     }
     // Update is called once per frame
