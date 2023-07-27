@@ -10,14 +10,13 @@ public class bullet : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "tank") {
-        GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-        Destroy(effect, 0.1f);
-        Destroy(gameObject);
+            GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 0.1f);
+            Destroy(gameObject);
         }
 
         if(collision.gameObject.tag == "Walls") {
-                Destroy(gameObject);
-        }
-        
+            Destroy(gameObject);
+        }   
     }
 }

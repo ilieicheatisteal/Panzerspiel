@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class healthbar : MonoBehaviour
+namespace Health {
+public class HealthBar : MonoBehaviour
 {
+	
 	public Slider slider;
 	
 	public void SetMaxHealth(int health)
@@ -15,6 +17,9 @@ public class healthbar : MonoBehaviour
 	
 	public void SetHealth(int health)
 	{
-		slider.value = health;
+		Debug.Log("wawdl", slider);
+		//slider = new Slider();
+		//slider.value = health;
 	}
+}
 }

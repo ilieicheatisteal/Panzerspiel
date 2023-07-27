@@ -172,3 +172,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffect: {fileID: 5462127692229693551, guid: 7bd43433c03b25344a84dcb2bf10ab59, type: 3}
+  hitEffect2: {fileID: 5462127692229693551, guid: 7bd43433c03b25344a84dcb2bf10ab59, type: 3}
