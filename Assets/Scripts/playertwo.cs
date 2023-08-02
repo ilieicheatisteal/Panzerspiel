@@ -14,12 +14,12 @@ public class playertwo : MonoBehaviour
 	}
 
 	void OnCollisionEnter2D(Collision2D collision3){
-		if(collision3.gameObject.tag == "bullet") {
+		if (collision3.gameObject.tag == "bullet") {
 			hitmarker2.Play();
 			scoreone.scoreValue2 -= 2;
 		}
 
-		if(collision3.gameObject.tag == "ball") {
+		if (collision3.gameObject.tag == "ball") {
 			explosion2.Play();
 			scoreone.scoreValue2 -= 30;
 		}
@@ -27,16 +27,16 @@ public class playertwo : MonoBehaviour
    // Update is called once per frame
 	void Update()
 	{
-		if(Input.GetKey(KeyCode.UpArrow)){
+		if (Input.GetKey(KeyCode.UpArrow)){
 			transform.Translate(0, speed * Time.deltaTime, 0);
 		}
-			if(Input.GetKey(KeyCode.LeftArrow)){
+		if (Input.GetKey(KeyCode.LeftArrow)){
 			transform.Rotate(0, 0, 50 * Time.deltaTime);
 		}
-		if(Input.GetKey(KeyCode.DownArrow)){
+		if (Input.GetKey(KeyCode.DownArrow)){
 			transform.Translate(0, -speed * Time.deltaTime, 0);
 		}
-		if(Input.GetKey(KeyCode.RightArrow)){
+		if (Input.GetKey(KeyCode.RightArrow)){
 			transform.Rotate(0, 0, -50 * Time.deltaTime);
 		}
 	}
