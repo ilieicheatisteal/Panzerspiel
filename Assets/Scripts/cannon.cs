@@ -17,8 +17,6 @@ public class cannon : MonoBehaviour
 		}
 
 		if(collision.gameObject.tag == "Walls") {
-			GameObject effect = Instantiate(hitEffect2, transform.position, Quaternion.identity);
-			Destroy(effect, 1.0f);
 			Destroy(gameObject);
 		}
 

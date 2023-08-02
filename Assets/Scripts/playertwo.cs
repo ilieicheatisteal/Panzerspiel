@@ -7,6 +7,7 @@ public class playertwo : MonoBehaviour
 	public AudioSource hitmarker2;
 	public AudioSource explosion2;
 	float speed = 3.0f;
+
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -15,10 +16,12 @@ public class playertwo : MonoBehaviour
 	void OnCollisionEnter2D(Collision2D collision3){
 		if(collision3.gameObject.tag == "bullet") {
 			hitmarker2.Play();
+			scoreone.scoreValue2 -= 2;
 		}
 
 		if(collision3.gameObject.tag == "ball") {
 			explosion2.Play();
+			scoreone.scoreValue2 -= 30;
 		}
 	}
    // Update is called once per frame
