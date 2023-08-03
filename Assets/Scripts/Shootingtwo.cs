@@ -15,7 +15,7 @@ public class Shootingtwo : MonoBehaviour
     void Update()
     {
         if(Input.GetKey(KeyCode.I)){
-            Shoot1 ();
+            Shoot1();
         }
     }
 
@@ -23,7 +23,7 @@ public class Shootingtwo : MonoBehaviour
     {
         if(Time.time > nextfire1){
             nextfire1 = Time.time + firerate1;
-             GameObject bullet = Instantiate(bulletPrefab, firePointTwo.position, firePointTwo.rotation);
+            GameObject bullet = Instantiate(bulletPrefab, firePointTwo.position, firePointTwo.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(firePointTwo.up * bulletForce, ForceMode2D.Impulse); 
         }
