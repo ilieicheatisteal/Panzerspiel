@@ -10,7 +10,7 @@ public class scoreone : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
-		score2 = GetComponent<Text> ();
+		score2 = GetComponent<Text>();
 	}
 
 	// Update is called once per frame

@@ -2067,7 +2067,6 @@ GameObject:
   - component: {fileID: 162595318}
   - component: {fileID: 162595319}
   - component: {fileID: 162595320}
-  - component: {fileID: 162595321}
   m_Layer: 0
   m_Name: playerone
   m_TagString: tank
@@ -2454,18 +2453,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &162595321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 162595310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a73da180dc7d2314b881e589c34bad31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &166548484
 GameObject:
   m_ObjectHideFlags: 0
@@ -8515,8 +8502,8 @@ Transform:
   m_GameObject: {fileID: 682261612}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.42, y: 2.39, z: 0}
-  m_LocalScale: {x: 4.2115245, y: 0.9375, z: 1}
+  m_LocalPosition: {x: 7.927, y: 2.39, z: 0}
+  m_LocalScale: {x: 3.5271516, y: 0.9375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1153014031}
@@ -13075,8 +13062,8 @@ Transform:
   m_GameObject: {fileID: 1092439234}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.77, y: 2.159994, z: 0}
-  m_LocalScale: {x: 4.2115245, y: 0.9375, z: 1}
+  m_LocalPosition: {x: -6.209, y: 2.159994, z: 0}
+  m_LocalScale: {x: 3.3165755, y: 0.9375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1153014031}

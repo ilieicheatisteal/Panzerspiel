@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class score : MonoBehaviour 
+public class score : MonoBehaviour
 {
-	
+
 	public static int scoreValue = 100;
 	Text score1;
 
@@ -13,7 +13,7 @@ public class score : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
-		score1 = GetComponent<Text> ();
+		score1 = GetComponent<Text>();
 	}
 
 	// Update is called once per frame
