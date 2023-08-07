@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class playertwo : MonoBehaviour
 {
+	public Sprite destroyedbluetank;
 	public AudioSource hitmarker2;
 	public AudioSource explosion2;
 	float speed = 3.0f;
@@ -25,21 +26,30 @@ public class playertwo : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (Input.GetKey(KeyCode.UpArrow))
+		if (scoreone.scoreValue2 <= 0)
 		{
-			transform.Translate(0, speed * Time.deltaTime, 0);
+			this.gameObject.GetComponent<SpriteRenderer>().sprite = destroyedbluetank;
 		}
-		if (Input.GetKey(KeyCode.LeftArrow))
+
+		if (scoreone.scoreValue2 > 0 && score.scoreValue > 0)
 		{
-			transform.Rotate(0, 0, 50 * Time.deltaTime);
-		}
-		if (Input.GetKey(KeyCode.DownArrow))
-		{
-			transform.Translate(0, -speed * Time.deltaTime, 0);
-		}
-		if (Input.GetKey(KeyCode.RightArrow))
-		{
-			transform.Rotate(0, 0, -50 * Time.deltaTime);
+
+			if (Input.GetKey(KeyCode.UpArrow))
+			{
+				transform.Translate(0, speed * Time.deltaTime, 0);
+			}
+			if (Input.GetKey(KeyCode.LeftArrow))
+			{
+				transform.Rotate(0, 0, 50 * Time.deltaTime);
+			}
+			if (Input.GetKey(KeyCode.DownArrow))
+			{
+				transform.Translate(0, -speed * Time.deltaTime, 0);
+			}
+			if (Input.GetKey(KeyCode.RightArrow))
+			{
+				transform.Rotate(0, 0, -50 * Time.deltaTime);
+			}
 		}
 	}
 }
