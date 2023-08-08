@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class playerone : MonoBehaviour
 {
@@ -39,6 +40,7 @@ public class playerone : MonoBehaviour
 		{
 			this.gameObject.GetComponent<SpriteRenderer>().sprite = destroyedgreentank;
 		}
+
 		if (score.scoreValue > 0 && scoreone.scoreValue2 > 0)
 		{
 

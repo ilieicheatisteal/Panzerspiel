@@ -19,9 +19,8 @@ public class GameManagerScript : MonoBehaviour
 		scoreone.scoreValue2 = 100;
 	}
 
-	public void quit()
+	public void MainMenu()
 	{
-		Application.Quit();
-		Debug.Log("Quit");
+		SceneManager.LoadScene("MainMenu");
 	}
 }
