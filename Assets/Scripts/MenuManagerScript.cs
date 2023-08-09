@@ -8,6 +8,8 @@ public class MenuManagerScript : MonoBehaviour
 	public void Play()
 	{
 		SceneManager.LoadScene("SampleScene");
+		score.scoreValue = 100;
+		scoreone.scoreValue2 = 100;
 	}
 
 	public void quit()
