@@ -10,6 +10,7 @@ public class playerone : MonoBehaviour
 	public AudioSource hitmarker;
 	public AudioSource explosion;
 	public AudioSource lose;
+	
 	float speed = 3.0f;
 	// Start is called before the first frame update
 	void Start()
@@ -57,7 +58,7 @@ public class playerone : MonoBehaviour
 				transform.Translate(0, -speed * Time.deltaTime, 0);
 			}
 			if (Input.GetKey(KeyCode.D))
-			{
+			{ 
 				transform.Rotate(0, 0, -50 * Time.deltaTime);
 			}
 		}

@@ -7,6 +7,7 @@ public class Shooting : MonoBehaviour
 
 	public Transform firePoint;
 	public GameObject bulletPrefab;
+	public AudioSource gunfire;
 
 	public float bulletForce = 10f;
 	public float firerate;
